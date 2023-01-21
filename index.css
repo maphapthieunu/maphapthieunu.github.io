@@ -16,19 +16,18 @@
 	-moz-animation-duration: 0.5s;
 	animation-duration: 0.5s;
 }
-#window {
+.centered {
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+#window {
   font-family: 'Quicksand', sans-serif;
   background-color: rgba(32, 32, 32, 75%);
-  border-radius: 24px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 15;
   color: #fff;
-  position: fixed;
 }
 #windowtitlebar {
   cursor: default;

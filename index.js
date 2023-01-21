@@ -50,3 +50,23 @@ document.getElementById("close").addEventListener("click", function() {
     window.close();
     console.log("Done calling window.close");
 }, false);
+
+function display_c(){
+  var refresh=1; // Refresh rate in milli seconds
+  mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+  var x = new Date()
+  var minutes=x.getMinutes().toString()
+  minutes=minutes.length==1 ? 0+minutes : minutes;
+
+  var seconds=x.getSeconds().toString()
+  seconds=seconds.length==1 ? 0+seconds : seconds;
+
+  var hours=x.getHours().toString()
+  hours=hours.length==1 ? 0+hours : hours;
+
+  document.getElementById('ct').innerHTML = hours + ":" +  minutes + ":" +  seconds;
+  display_c();
+}

@@ -1,2 +1,3 @@
 # Notes
-dragging window won't work
+dragging window won't work  
+fuck u github

@@ -1,3 +1,4 @@
 # Notes
-dragging window won't work  
-fuck u github
+js scripts are copied from stackoevrflow kthxbai
+# Goals
+no

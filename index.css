@@ -1,18 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
 #window {
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-family: 'Quicksand', sans-serif;
-  background-color: rgba(0, 0, 0, 65%);
+  background-color: rgba(32, 32, 32, 75%);
   border-radius: 24px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 15;
   color: #fff;
   position: fixed;
+}
+#windowtitlebar {
+  cursor: default;
+}
+a {
+  color: #fff;
 }
 #close {
   background-color: rgb(232, 17, 35);
@@ -26,7 +48,7 @@
 }
 body {
     margin: auto;
-    background-image: url("index.jpg");
+    background-image: url("img/index.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

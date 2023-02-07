@@ -55,9 +55,10 @@ a {
 #close {
   background-color: rgb(232, 17, 35);
   border: none;
-  border-radius: 9px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
   margin-right: 8px;
-  padding: 0px 2px 0px 3px;
 }
 #close:hover {
   background-color: hsl(355, 70%, 49%);

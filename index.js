@@ -92,5 +92,8 @@ if ("maxTouchPoints" in navigator) {
 }
 
 if (hasTouchScreen) {
-window.location.href = "mobile.html";
+  window.location.href = "mobile.html";
+}
+else {
+  window.location.href = "index.html";
 }

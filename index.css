@@ -47,6 +47,7 @@
   color: #fff;
 }
 #windowtitlebar {
+  width: 100%;
   cursor: default;
 }
 a {

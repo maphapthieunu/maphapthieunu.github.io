@@ -14,14 +14,26 @@
     </div>
     <div id="window" class="centered fade-in stupidass">
         <div id="windowtitlebar">
-            <button id="close">ㅤ</button>
+            <button id="close"></button>
             Welcome to my homepage!
         </div>
         <br>
         <a href="https://www.facebook.com/s1stine"><img src="img/fb.svg" style="width: 18; height: 18; margin-bottom: -2.5; margin-right: 8;"></img></a>
         <a href="https://www.github.com/s1stine"><img src="img/gh.svg" style="width: 18; height: 18; margin-bottom: -2.5; margin-right: 8;"></img></a>
         <a href="https://www.twitter.com/s1stine"><img src="img/tw.svg" style="width: 18; height: 18; margin-bottom: -2.5; margin-right: 8;"></img></a>
-        <img src="img/momo.svg" style="width: 18; height: 18; margin-bottom: -2.5; margin-left: -3;"></img>: 0945931760
+        <img src="img/wallet.svg" style="margin-bottom: -4; margin-left: -3;" onclick="showDiv()"></img>
+    </div>
+    <div id="donate" class="centered fade-in stupidass">
+        <div id="windowtitlebar">
+            <button id="close" onclick="
+                var donate = document.getElementById('donate');
+                donate.style.display = 'none'"></button>
+            Donation
+        </div>
+        <br>
+        MoMo/ZaloPay: 0945931760
+        <br>
+        Không có bank nên không nhận được tiền
     </div>
     </body>
     <script src="index.js"></script>

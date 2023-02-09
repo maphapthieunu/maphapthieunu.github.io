@@ -44,12 +44,14 @@ function dragElement(elmnt) {
 }
 
 // copied from stackoverflow
+/*
 document.getElementById("close").addEventListener("click", function() {
     // Close in direct response to a user action
     console.log("Calling window.close");
     window.close();
     console.log("Done calling window.close");
 }, false);
+*/
 
 function display_c(){
   var refresh=1; // Refresh rate in milli seconds
@@ -94,3 +96,13 @@ if ("maxTouchPoints" in navigator) {
 if (hasTouchScreen) {
 window.location.href = "mobile.html";
 }
+
+function showDiv() {
+  var div = document.getElementById('donate');
+  if (div.style.display !== 'none') {
+      div.style.display = 'none';
+  }
+  else {
+      div.style.display = 'block';
+  }
+};

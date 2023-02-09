@@ -39,6 +39,9 @@
   padding: 30;
   font-size: 200%;
 }
+#donate {
+  display: none;
+}
 #finderbar {
   font-family: 'Quicksand', sans-serif;
   background-color: rgba(32, 32, 32, 75%);
@@ -50,9 +53,6 @@
   width: 100%;
   cursor: default;
 }
-a {
-  color: #fff;
-}
 #close {
   background-color: rgb(232, 17, 35);
   border: none;
@@ -63,6 +63,9 @@ a {
 }
 #close:hover {
   background-color: hsl(355, 70%, 49%);
+}
+a {
+  color: #fff;
 }
 body {
   margin: auto;

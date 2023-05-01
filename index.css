@@ -1,76 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-.fade-in {
-	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
-
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration: 0.5s;
-	-moz-animation-duration: 0.5s;
-	animation-duration: 0.5s;
+button {
+  padding: 8px;
+  background-color: #ffffff00;
+  color: #000000;
+  border: 0px;
+  font-family: 'Courier New', Courier, monospace;
 }
-.centered {
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-.stupidass {
-  font-family: 'Quicksand', sans-serif;
-  background-color: rgba(32, 32, 32, 75%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff;
-  border-radius: 24px;
-  padding: 15;
-  position: fixed;
-}
-.mobile {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 48px;
-  padding: 30;
-  font-size: 200%;
-}
-#donate {
-  display: none;
-}
-#finderbar {
-  font-family: 'Quicksand', sans-serif;
-  background-color: rgba(32, 32, 32, 75%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff;
-}
-#windowtitlebar {
-  width: 100%;
-  cursor: default;
-}
-#close {
-  background-color: rgb(232, 17, 35);
-  border: none;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-}
-#close:hover {
-  background-color: hsl(355, 70%, 49%);
+button:hover {
+  background-color: #deb887;
 }
 a {
-  color: #fff;
+  color: #000000;
+  text-decoration: none;
 }
 body {
-  margin: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+  background-color: #faebd7;
+  font-family: 'Courier New', Courier, monospace;
+}
+img {
+  vertical-align: middle;
+}
+.header {
+  display: inline;
 }
